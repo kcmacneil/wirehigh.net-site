@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Structured Cabling — Wire High</title>
+    <meta name="description" content="Inside the building, on a documented plan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Structured Cabling</h1>
+      <p class="hero-sub">Inside the building, on a documented plan</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Disciplines">
+      <ul>
+        <li><a href="/services/transmission">Transmission Lines</a></li>
+        <li><a href="/services/distribution">Distribution &amp; Substations</a></li>
+        <li><a href="/services/fiber">Fiber &amp; Broadband</a></li>
+        <li><a href="/services/structured-cabling" class="current">Structured Cabling</a></li>
+        <li><a href="/services/wireless">Wireless &amp; Antenna Sites</a></li>
+        <li><a href="/services/inspection">Inspection &amp; Maintenance</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Structured cabling is the discipline of making in-building connectivity boring: a documented hierarchy of entrance facility, backbone, telecom rooms and horizontal runs, built to a standard so any technician can work on it years later.</p>
+      </section>
+
+      <section class="prose">
+        <h2>The hierarchy</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Entrance facility.</strong> Where carrier services land and bond to the building's grounding electrode system.</li>
+          <li><strong>Backbone.</strong> Fiber or copper risers between the main and horizontal cross-connects, sized for growth rather than today's port count.</li>
+          <li><strong>Telecom rooms.</strong> Racks, patch panels, cable management and cooling — space here is what keeps the rest of the plant tidy.</li>
+          <li><strong>Horizontal runs.</strong> Category cable from the patch panel to the outlet, inside the 100 m channel limit including patch cords.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Installation quality</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Pathways.</strong> Tray, J-hooks and conduit at a supported spacing; cable is never left hanging on a ceiling grid or a sprinkler pipe.</li>
+          <li><strong>Bend radius and tension.</strong> Respect the manufacturer's minimums; a kinked or over-pulled cable can pass a wire map and still fail at speed.</li>
+          <li><strong>Separation.</strong> Keep distance from power runs and ballasts, and cross at right angles when you must cross.</li>
+          <li><strong>Labelling.</strong> Both ends, every cable, matching the panel and floor-plan records.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Certification</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Permanent link or channel test on every run with a certified field tester, saved as a report per outlet.</li>
+          <li>Fiber links tested for loss and, where required, OTDR-characterised.</li>
+          <li>Power over Ethernet loads checked against bundle heating and cable temperature ratings.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://www.bicsi.org/">BICSI</a></li>
+          <li><a href="https://tiaonline.org/what-we-do/standards/">TIA-568 family overview</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other disciplines">
+        <a class="prev" href="/services/fiber">&larr; Fiber &amp; Broadband</a>
+        <a class="next" href="/services/wireless">Wireless &amp; Antenna Sites &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

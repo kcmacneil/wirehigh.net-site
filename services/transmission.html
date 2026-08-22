@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transmission Lines — Wire High</title>
+    <meta name="description" content="Moving bulk power across long distances." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Transmission Lines</h1>
+      <p class="hero-sub">Moving bulk power across long distances</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Disciplines">
+      <ul>
+        <li><a href="/services/transmission" class="current">Transmission Lines</a></li>
+        <li><a href="/services/distribution">Distribution &amp; Substations</a></li>
+        <li><a href="/services/fiber">Fiber &amp; Broadband</a></li>
+        <li><a href="/services/structured-cabling">Structured Cabling</a></li>
+        <li><a href="/services/wireless">Wireless &amp; Antenna Sites</a></li>
+        <li><a href="/services/inspection">Inspection &amp; Maintenance</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">A transmission line is a set of bare conductors held in air at a safe distance from everything else. Almost every design decision follows from two numbers: the voltage it must insulate against and the span it must cross.</p>
+      </section>
+
+      <section class="prose">
+        <h2>Design drivers</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Voltage class.</strong> Insulator length, phase spacing and clearance to ground scale with operating voltage. Raising a line from 115 kV to 230 kV changes the structure, not just the hardware.</li>
+          <li><strong>Conductor selection.</strong> ACSR, ACSS and all-aluminium conductors trade strength, sag behaviour and thermal rating. Ampacity is set by the maximum allowed operating temperature, not by copper-style rules of thumb.</li>
+          <li><strong>Sag and tension.</strong> Conductors are strung to a tension that keeps sag inside the clearance envelope at maximum temperature and under ice and wind loading.</li>
+          <li><strong>Structure loading.</strong> Lattice towers, tubular steel poles and wood structures are checked for vertical, transverse and longitudinal loads, including broken-conductor cases.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Construction sequence</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Route and survey.</strong> LiDAR or ground survey fixes the profile, crossings and constraints; the plan-and-profile drawing is the contract between design and the crew.</li>
+          <li><strong>Foundations and framing.</strong> Drilled piers or direct-embed poles are set, then structures are framed and dressed with insulators and hardware on the ground where possible.</li>
+          <li><strong>Stringing.</strong> Sock lines pull the conductor through travellers under controlled tension so it never touches the ground or an energised crossing.</li>
+          <li><strong>Sagging and clipping.</strong> Spans are sagged to the stringing chart for the day's temperature, then clipped in, and dampers and spacers are installed.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>What goes wrong</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Clearance encroachment from conductor creep, vegetation growth or new construction under the line.</li>
+          <li>Hardware wear at suspension points — worn armour rod, cracked insulators, corroded fittings.</li>
+          <li>Aeolian vibration and galloping in long spans without adequate damping.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://standards.ieee.org/">IEEE Standards Association</a></li>
+          <li><a href="https://standards.ieee.org/products-programs/nesc/">NESC overview (IEEE)</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other disciplines">
+        <a class="next" href="/services/distribution">Distribution &amp; Substations &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Distribution & Substations — Wire High</title>
+    <meta name="description" content="Stepping down, splitting out and protecting." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Distribution &amp; Substations</h1>
+      <p class="hero-sub">Stepping down, splitting out and protecting</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Disciplines">
+      <ul>
+        <li><a href="/services/transmission">Transmission Lines</a></li>
+        <li><a href="/services/distribution" class="current">Distribution &amp; Substations</a></li>
+        <li><a href="/services/fiber">Fiber &amp; Broadband</a></li>
+        <li><a href="/services/structured-cabling">Structured Cabling</a></li>
+        <li><a href="/services/wireless">Wireless &amp; Antenna Sites</a></li>
+        <li><a href="/services/inspection">Inspection &amp; Maintenance</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Substations are where voltage classes meet. Distribution is what leaves them: feeders, laterals and services that reach the meter. Reliability here is mostly a question of how a fault is detected, isolated and restored.</p>
+      </section>
+
+      <section class="prose">
+        <h2>Substation building blocks</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Power transformers.</strong> Set the voltage ratio and the fault duty of everything downstream; cooling class and loading limits dictate real capacity.</li>
+          <li><strong>Switchgear and breakers.</strong> Provide the interrupting capability, isolation points and the switching flexibility to reconfigure around a fault.</li>
+          <li><strong>Protection and control.</strong> Relays measure current, voltage and frequency and trip within cycles; coordination curves decide which device operates first.</li>
+          <li><strong>Grounding grid.</strong> A designed grid keeps step and touch potentials safe during a ground fault, and gives surge current a low-impedance path.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Feeder practice</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Coordination.</strong> Fuses, reclosers and relays are graded so the device closest to the fault clears it and the rest of the feeder stays up.</li>
+          <li><strong>Sectionalising.</strong> Tie points and normally open switches let crews reroute load while a damaged section is repaired.</li>
+          <li><strong>Voltage regulation.</strong> Regulators, capacitor banks and, increasingly, inverter-based resources hold voltage inside limits across the whole feeder.</li>
+          <li><strong>Distributed generation.</strong> Rooftop solar and storage reverse power flow at times, which changes protection assumptions and requires anti-islanding controls.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Operational notes</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Record every switching operation — an inaccurate diagram is a safety hazard, not just a paperwork problem.</li>
+          <li>Track outage cause codes; the top three causes usually account for most of the customer-minutes lost.</li>
+          <li>Test grounds and bonds after any structure work; a lifted neutral is invisible until someone is hurt.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://ieee-pes.org/">IEEE Power &amp; Energy Society</a></li>
+          <li><a href="https://www.nfpa.org/codes-and-standards">NFPA 70E — electrical safety in the workplace</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other disciplines">
+        <a class="prev" href="/services/transmission">&larr; Transmission Lines</a>
+        <a class="next" href="/services/fiber">Fiber &amp; Broadband &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

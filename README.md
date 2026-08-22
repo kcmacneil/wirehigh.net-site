@@ -1,19 +1,28 @@
 # wirehigh.net-site
 
-Static site for wirehigh.net, deployed on Vercel (project `wirehigh.net-site`).
+Static site for wirehigh.net — an overview of power and communications infrastructure, with a page per
+discipline. Hosted on Vercel (project `wirehigh.net-site`).
 
-## Structure
+## Files
 
-- `public/` — static assets served at the site root (`index.html`, `styles.css`, `main.js`)
-- `vercel.json` — Vercel configuration (clean URLs, no trailing slash)
+- `index.html` — front page (hero, disciplines, reference table)
+- `services/*.html` — one page per discipline
+- `assets/hero.jpg` — hero image
+- `styles.css` — styling
+- `vercel.json` — Vercel config (clean URLs)
 
 ## Local preview
 
 ```bash
-python3 -m http.server 8000 --directory public
+python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
 ## Deploy
 
-Pushes to `main` deploy to production via the Vercel Git integration; other branches get preview deployments.
+Pushes to `main` deploy via the Vercel Git integration, or from the CLI:
+
+```bash
+npx vercel        # preview deployment
+npx vercel --prod # production deployment
+```
