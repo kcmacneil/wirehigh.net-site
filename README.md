@@ -20,7 +20,8 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Pushes to `main` deploy via the Vercel Git integration, or from the CLI:
+Pushes to `main` deploy to production via the Vercel Git integration (production branch `main`), or
+from the CLI:
 
 ```bash
 npx vercel        # preview deployment
