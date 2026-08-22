@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Topology & Spaces — Wire High</title>
+    <meta name="description" content="Where the patch fields live, and why it matters." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Topology &amp; Spaces</h1>
+      <p class="hero-sub">Where the patch fields live, and why it matters</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Topics">
+      <ul>
+        <li><a href="/topics/topology" class="current">Topology &amp; Spaces</a></li>
+        <li><a href="/topics/media">Media &amp; Link Budgets</a></li>
+        <li><a href="/topics/pathways">Pathways &amp; Containment</a></li>
+        <li><a href="/topics/rack-dressing">Rack Dressing &amp; Patching</a></li>
+        <li><a href="/topics/airflow">Airflow &amp; Thermal Discipline</a></li>
+        <li><a href="/topics/documentation">Labeling, Records &amp; Testing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Data center cabling is organised into spaces: an entrance room where carriers land, a main distribution area holding the core patch field, horizontal or zone distribution areas serving groups of cabinets, and the equipment distribution area inside each rack. The topology you pick fixes the cable volume, the pathway fill and the cost of every future change.</p>
+      </section>
+
+      <section class="prose">
+        <h2>The spaces</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Entrance room.</strong> Carrier demarcation and the boundary between provider and owner responsibility. Keep it separate from the compute floor so carrier work never requires hall access.</li>
+          <li><strong>Main distribution area.</strong> The central cross-connect: core switching, backbone trunks and the patch field that everything else homes to. Size it for the eventual hall, not the first phase.</li>
+          <li><strong>Horizontal / zone distribution.</strong> Intermediate patch points serving a row or a group of cabinets, so a cabinet refresh means re-patching a zone rather than pulling new backbone.</li>
+          <li><strong>Equipment distribution area.</strong> The rack itself: switch ports, patch panels, cord slack and the management hardware that makes the rack traceable.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Choosing a switching topology</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Top of rack.</strong> One or two switches per cabinet; server links stay in-rack as DAC or AOC, and only uplinks leave. Fewest long cables, most switch ports to manage, and stranded ports in partly filled cabinets.</li>
+          <li><strong>End or middle of row.</strong> Server links run in structured pathways to a row switch. Fewer switches and better port utilisation, at the cost of a lot more copper or fiber in the containment.</li>
+          <li><strong>Centralised structured cabling.</strong> Every cabinet homes to the main distribution area through fixed trunks and cassettes. Highest first-cost, lowest churn cost — the pattern that survives repeated equipment generations.</li>
+          <li><strong>Hybrid in practice.</strong> Most halls run top-of-rack for compute, structured trunks for uplinks and storage, and a separate out-of-band copper plane.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Design habits that pay off</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Design the hall at full build-out, then install in phases against that drawing.</li>
+          <li>Reserve rack units and pathway capacity for the second and third refresh, not just today's kit.</li>
+          <li>Keep the out-of-band management network physically distinct — it is the network you need when the production fabric is down.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://tiaonline.org/what-we-do/standards/">ANSI/TIA-942 overview</a></li>
+          <li><a href="https://www.bicsi.org/standards">BICSI 002 data center design</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other topics">
+        <a class="next" href="/topics/media">Media &amp; Link Budgets &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

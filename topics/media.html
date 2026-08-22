@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Media & Link Budgets — Wire High</title>
+    <meta name="description" content="Reach, loss budget and the real cost per link." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Media &amp; Link Budgets</h1>
+      <p class="hero-sub">Reach, loss budget and the real cost per link</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Topics">
+      <ul>
+        <li><a href="/topics/topology">Topology &amp; Spaces</a></li>
+        <li><a href="/topics/media" class="current">Media &amp; Link Budgets</a></li>
+        <li><a href="/topics/pathways">Pathways &amp; Containment</a></li>
+        <li><a href="/topics/rack-dressing">Rack Dressing &amp; Patching</a></li>
+        <li><a href="/topics/airflow">Airflow &amp; Thermal Discipline</a></li>
+        <li><a href="/topics/documentation">Labeling, Records &amp; Testing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Media selection is an optics decision, not a cable decision. The transceiver you intend to run sets the allowable channel loss and reach; the cable, connectors and patch panels then have to fit inside that budget with margin left for future repairs.</p>
+      </section>
+
+      <section class="prose">
+        <h2>The choices</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Direct attach copper.</strong> Cheapest and lowest power for in-rack links up to about three metres, but stiff and bulky — a cabinet full of DAC can defeat a vertical manager.</li>
+          <li><strong>Active optical cable.</strong> Light and flexible for row-length links; a fixed assembly, so damage to one end means replacing the whole cord.</li>
+          <li><strong>Multimode OM4 / OM5.</strong> Cheap optics for reaches around 100 m. Each mated connector pair spends loss budget, so a structured path with cassettes at both ends needs the maths done up front.</li>
+          <li><strong>Single-mode OS2.</strong> Effectively unlimited reach for a hall and future-proof against speed upgrades; optics cost more and end-face cleanliness becomes non-negotiable.</li>
+          <li><strong>Pre-terminated MPO trunks.</strong> Factory-tested trunks plus cassettes give fast, repeatable installs — provided polarity, gender and fiber count are planned before ordering.</li>
+          <li><strong>Category 6A copper.</strong> The right answer for out-of-band management, sensors and PoE devices; keep it out of the high-speed data path.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Working the loss budget</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Start from the optics.</strong> Take the transceiver's maximum channel insertion loss, subtract fiber attenuation over the route, then allocate what remains to connectors and splices.</li>
+          <li><strong>Count every mated pair.</strong> A structured link commonly has four or more: equipment cord, cassette, trunk, cassette, equipment cord.</li>
+          <li><strong>Leave margin.</strong> Hold back a few tenths of a dB for cleaning damage, a future repair splice and ageing.</li>
+          <li><strong>Verify, don't assume.</strong> Measure the installed channel; a design budget is a prediction, and the tester result is the fact.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Cleanliness and handling</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Inspect, clean, inspect again before every mating — contamination is the single most common cause of optical faults.</li>
+          <li>Cap unused adapters and cords; an open port collects dust in hours.</li>
+          <li>Respect minimum bend radius on fiber cords, especially inside cable managers and at the cassette.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://www.thefoa.org/">The Fiber Optic Association</a></li>
+          <li><a href="https://ethernetalliance.org/">Ethernet Alliance</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other topics">
+        <a class="prev" href="/topics/topology">&larr; Topology &amp; Spaces</a>
+        <a class="next" href="/topics/pathways">Pathways &amp; Containment &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

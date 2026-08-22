@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Labeling, Records & Testing — Wire High</title>
+    <meta name="description" content="If it is not recorded, it does not exist." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Labeling, Records &amp; Testing</h1>
+      <p class="hero-sub">If it is not recorded, it does not exist</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Topics">
+      <ul>
+        <li><a href="/topics/topology">Topology &amp; Spaces</a></li>
+        <li><a href="/topics/media">Media &amp; Link Budgets</a></li>
+        <li><a href="/topics/pathways">Pathways &amp; Containment</a></li>
+        <li><a href="/topics/rack-dressing">Rack Dressing &amp; Patching</a></li>
+        <li><a href="/topics/airflow">Airflow &amp; Thermal Discipline</a></li>
+        <li><a href="/topics/documentation" class="current">Labeling, Records &amp; Testing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Documentation is the deliverable that makes the plant maintainable: a labeling scheme applied at both ends of every cable, a port-level record that matches the field, and certified test results that let you prove a link was good on the day it was handed over.</p>
+      </section>
+
+      <section class="prose">
+        <h2>Labeling</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Scheme first.</strong> Adopt an identifier structure — room, row, cabinet, panel, port — before the first label is printed, and use it in every system that references the plant.</li>
+          <li><strong>Both ends, always.</strong> A label at one end only turns tracing into guesswork; machine-printed, correctly sized, applied where it can be read in situ.</li>
+          <li><strong>Panels and pathways.</strong> Label patch panels, tray runs and cabinet positions too, not just the cords.</li>
+          <li><strong>Durability.</strong> Printed labels, not handwriting; laminated or wrap-around so they survive years of handling.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Records</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Single source of truth.</strong> One system — DCIM or a disciplined spreadsheet — holding cabinet, panel, port, media type, endpoint and status. Two competing records are worse than one imperfect one.</li>
+          <li><strong>Update at the point of work.</strong> Records updated during the change, not in a weekly catch-up, are the only ones that stay accurate.</li>
+          <li><strong>Audit.</strong> Sample-audit a percentage of ports each quarter; the audit failure rate tells you how much to trust the whole database.</li>
+          <li><strong>Decommissioning.</strong> Retire records and remove cable together, so 'spare' capacity in the system is genuinely spare.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Acceptance testing</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Copper.</strong> Permanent link or channel certification per run with a calibrated field tester, saved as a per-port report.</li>
+          <li><strong>Fiber.</strong> Insertion loss against the design budget in both directions, plus OTDR traces on backbone and trunks.</li>
+          <li><strong>Endface inspection.</strong> Documented as part of the handover for every fiber connector mated.</li>
+          <li><strong>Handover pack.</strong> Test results, as-built drawings, labeling schedule and a port register — accepted before the contractor leaves site.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://tiaonline.org/what-we-do/standards/">TIA-606 administration standard</a></li>
+          <li><a href="https://www.thefoa.org/tech/">The Fiber Optic Association test procedures</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other topics">
+        <a class="prev" href="/topics/airflow">&larr; Airflow &amp; Thermal Discipline</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Airflow & Thermal Discipline — Wire High</title>
+    <meta name="description" content="Every bundle is an obstruction." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Airflow &amp; Thermal Discipline</h1>
+      <p class="hero-sub">Every bundle is an obstruction</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Topics">
+      <ul>
+        <li><a href="/topics/topology">Topology &amp; Spaces</a></li>
+        <li><a href="/topics/media">Media &amp; Link Budgets</a></li>
+        <li><a href="/topics/pathways">Pathways &amp; Containment</a></li>
+        <li><a href="/topics/rack-dressing">Rack Dressing &amp; Patching</a></li>
+        <li><a href="/topics/airflow" class="current">Airflow &amp; Thermal Discipline</a></li>
+        <li><a href="/topics/documentation">Labeling, Records &amp; Testing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Cabling and cooling share the same volume. A cable plan that ignores airflow shows up later as hot spots, raised fan power and reduced capacity per cabinet — and the fix is usually re-cabling, which nobody has budget for.</p>
+      </section>
+
+      <section class="prose">
+        <h2>Where cabling meets cooling</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Rear obstruction.</strong> Dense bundles across the rear of a cabinet block exhaust and raise inlet temperatures for equipment above. Route to the sides in vertical channels, not across the exhaust face.</li>
+          <li><strong>Blanking panels.</strong> Unfilled rack units recirculate hot air to the front of the cabinet. Blank every gap — it is the cheapest thermal improvement available.</li>
+          <li><strong>Floor and roof openings.</strong> Brush grommets on every cable cutout; an open tile or unsealed cable entry leaks the pressure your containment relies on.</li>
+          <li><strong>Containment integrity.</strong> Hot or cold aisle containment only works if cable penetrations are sealed and doors are kept closed.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Cable-side considerations</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>PoE bundle heating.</strong> Large bundles carrying high-power PoE run warm in the middle; limit bundle size and de-rate to the cable's temperature rating.</li>
+          <li><strong>Cable choice affects volume.</strong> Smaller-diameter cable and pre-terminated trunks move less material through the same pathway, which directly reduces obstruction.</li>
+          <li><strong>Underfloor plenum.</strong> If the floor is a supply plenum, treat it as cooling space first — cabling there must be minimised and kept out of the airflow path.</li>
+          <li><strong>Plenum ratings.</strong> Use correctly rated cable for the space, and follow the local code for air-handling spaces.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Verification</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Take inlet temperatures at the top of representative cabinets before and after major cabling work.</li>
+          <li>Walk the hall for missing blanking panels and open grommets on a schedule; they reappear constantly.</li>
+          <li>Re-check containment seals after every project that penetrates them.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://www.ashrae.org/technical-resources">ASHRAE Technical Committee 9.9 datacom guidance</a></li>
+          <li><a href="https://www.thegreengrid.org/">The Green Grid resources</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other topics">
+        <a class="prev" href="/topics/rack-dressing">&larr; Rack Dressing &amp; Patching</a>
+        <a class="next" href="/topics/documentation">Labeling, Records &amp; Testing &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

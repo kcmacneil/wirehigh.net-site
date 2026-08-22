@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pathways & Containment — Wire High</title>
+    <meta name="description" content="Containment sized once, used for a decade." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Pathways &amp; Containment</h1>
+      <p class="hero-sub">Containment sized once, used for a decade</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Topics">
+      <ul>
+        <li><a href="/topics/topology">Topology &amp; Spaces</a></li>
+        <li><a href="/topics/media">Media &amp; Link Budgets</a></li>
+        <li><a href="/topics/pathways" class="current">Pathways &amp; Containment</a></li>
+        <li><a href="/topics/rack-dressing">Rack Dressing &amp; Patching</a></li>
+        <li><a href="/topics/airflow">Airflow &amp; Thermal Discipline</a></li>
+        <li><a href="/topics/documentation">Labeling, Records &amp; Testing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Pathways are the part of the plant nobody re-does. Trays, ladder rack and conduits get installed at build time and then filled by every subsequent project, so fill ratio, separation and access are worth arguing about early.</p>
+      </section>
+
+      <section class="prose">
+        <h2>Route options</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Overhead ladder rack.</strong> Strong, open and easy to inspect; the default for copper and fiber trunks above the cabinets, usually on two or three tiers to separate services.</li>
+          <li><strong>Wire basket tray.</strong> Lighter and cheaper, good for branch runs, with edge protection where cable leaves the basket.</li>
+          <li><strong>Fiber raceway.</strong> Enclosed, radius-controlled ducting for patch cords between patch fields, protecting cords from crushing and over-bending.</li>
+          <li><strong>Underfloor.</strong> Still used where a raised floor exists, but it competes with cooling airflow and hides abandoned cable — keep it for power where possible.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Sizing and separation</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Fill ratio.</strong> Design to roughly 25 to 40 percent fill at handover so later projects have somewhere to go; a full tray forces cable to be laid on top of cable, crushing what is below.</li>
+          <li><strong>Layering.</strong> Separate fiber, copper and power onto different tiers or trays. Fiber on top, never under a copper bundle.</li>
+          <li><strong>Power separation.</strong> Maintain the separation your standard requires between unshielded copper and power runs, and cross at right angles when a crossing is unavoidable.</li>
+          <li><strong>Bend and drop management.</strong> Use radius drops and waterfalls where cable leaves containment into a cabinet; a sharp tray edge is a slow-motion failure.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Housekeeping</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Support cable at the specified interval — no cable resting on ceiling grid, pipework or sprinkler heads.</li>
+          <li>Bond metallic pathways per code; containment is part of the grounding system.</li>
+          <li>Remove abandoned cable. It is a fire-load and pathway-capacity problem, and codes increasingly require its removal.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://www.bicsi.org/standards">BICSI standards</a></li>
+          <li><a href="https://www.nfpa.org/codes-and-standards">NFPA codes and standards</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other topics">
+        <a class="prev" href="/topics/media">&larr; Media &amp; Link Budgets</a>
+        <a class="next" href="/topics/rack-dressing">Rack Dressing &amp; Patching &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>

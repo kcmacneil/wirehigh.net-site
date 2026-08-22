@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rack Dressing & Patching — Wire High</title>
+    <meta name="description" content="Technique at the cabinet, where it is visible." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="hero hero-compact">
+      <nav class="wordmark"><a href="/">Wire High</a></nav>
+      <h1>Rack Dressing &amp; Patching</h1>
+      <p class="hero-sub">Technique at the cabinet, where it is visible</p>
+    </header>
+
+    <nav class="topics-nav" aria-label="Topics">
+      <ul>
+        <li><a href="/topics/topology">Topology &amp; Spaces</a></li>
+        <li><a href="/topics/media">Media &amp; Link Budgets</a></li>
+        <li><a href="/topics/pathways">Pathways &amp; Containment</a></li>
+        <li><a href="/topics/rack-dressing" class="current">Rack Dressing &amp; Patching</a></li>
+        <li><a href="/topics/airflow">Airflow &amp; Thermal Discipline</a></li>
+        <li><a href="/topics/documentation">Labeling, Records &amp; Testing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="prose">
+        <p class="lede">Rack dressing is where cable management is judged. The goal is a cabinet where any single cord can be removed and replaced without disturbing its neighbours, at any hour, by someone who did not build it.</p>
+      </section>
+
+      <section class="prose">
+        <h2>Hardware and layout</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Vertical managers.</strong> Full-height, both sides, with fingers deep enough for the eventual cord count — cords route vertically first, then horizontally into the panel.</li>
+          <li><strong>Horizontal managers.</strong> One rack unit of management between patch panels keeps cords out of the panel's own bend radius.</li>
+          <li><strong>Patch field placement.</strong> Locate panels so the shortest sane cord reaches the switch; a patch field at the wrong end of the rack doubles cord length.</li>
+          <li><strong>Slack and service loops.</strong> A short, radius-controlled service loop at the panel allows for re-termination; a coil of surplus cord in the tray is not a service loop.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Technique</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li><strong>Hook-and-loop, not cable ties.</strong> Reusable straps at consistent intervals, snug but never compressing the jacket. Plastic ties over-tighten and change the cable's transmission behaviour.</li>
+          <li><strong>Exact cord lengths.</strong> Stock a small ladder of lengths — 0.5, 1, 2, 3 m — and use the shortest that routes properly instead of coiling the excess.</li>
+          <li><strong>Route, then dress.</strong> Lay every cord along its path first, then bundle. Bundling as you go produces crossovers that cannot be undone later.</li>
+          <li><strong>Colour discipline.</strong> Assign colour by function — production, out-of-band, storage, cross-connect — and publish the scheme so it survives staff changes.</li>
+          <li><strong>Bend radius at the connector.</strong> Boots and cords need clearance; the last few centimetres in front of a panel is where most damage happens.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Change management</h2>
+        <span class="rule"></span>
+        <ul class="detail">
+          <li>Remove the old cord when a link is retired — same visit, not later.</li>
+          <li>Never patch through a cabinet you are not documenting; undocumented cross-cabinet cords are the origin of most patch-field decay.</li>
+          <li>Photograph the front and rear of the cabinet after work; it is the cheapest as-built you will ever produce.</li>
+        </ul>
+      </section>
+
+      <section class="prose">
+        <h2>Further Reading</h2>
+        <span class="rule"></span>
+        <ul class="detail plain">
+          <li><a href="https://tiaonline.org/what-we-do/standards/">TIA-606 administration and labeling</a></li>
+          <li><a href="https://www.bicsi.org/standards">BICSI Information Technology Systems Installation Methods</a></li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Other topics">
+        <a class="prev" href="/topics/pathways">&larr; Pathways &amp; Containment</a>
+        <a class="next" href="/topics/airflow">Airflow &amp; Thermal Discipline &rarr;</a>
+      </nav>
+    </main>
+
+    <footer>
+      <p><a href="/">Back to the front page</a> · Deployed on Vercel</p>
+    </footer>
+  </body>
+</html>
